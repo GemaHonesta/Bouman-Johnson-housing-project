@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap');
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  outline:none;
+  font-family: 'roboto', sans-serif; 
+}
+
+.container{
+    /* margin-left: auto;
+    margin-right: auto;
+    width: 15em;
+    position: absolute;
+    width: 100%;
+    padding: 0 20px; */
+
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 20px;
+}
+
+
+body{
+    background-image: url('images/property.jpg');
+    /* background-color: url('/images/property.jpg') no-repeat top center; */
+    background-size: cover;
+    height:100vh;
+}
+
+p{
+color: white;
+}
+
+h1{
+    color: white;
+    font-size: 25px;
+    max-width: 550px;
+    margin:0 auto;
+}
+
+label{
+    color: white;
+}
+
+#form{
+    max-width: 550px;
+    margin:0 auto;
+    background: rgba(0,0,0,0.8);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+
+}
+
+
+/* MODAL STARTS */
+
+/**  Modal window for start button **/
+
+.my-modal {
+    display: none;
+    position: fixed; 
+    padding-top: 50px;
+    left: 0; 
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Modal Content */
+  .my-modal-content {
+    position: relative; 
+    background-color: #fff;
+    margin: auto; 
+    width: 50%;
+  }
+  
+  /* Modal Header*/
+  .my-modal-header {
+    padding: 0 20px;
+    background-color: #b8dddb;
+    text-align: center;
+  }
+  
+  /* Modal Body */
+  .my-modal-body {
+    padding: 20px;
+    color: #666;
+    text-align: center;
+  }
+  
+  /* Modal Footer */
+  .my-modal-footer {
+    padding: 20px;
+    background-color: #3c4140;
+    color: white;
+    text-align: center;
+  }
+  
+  .close-btn {
+    font-size: 42px;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    color: #222;
+  }
+  
+  .colorBrown{
+      color: brown;
+  }
+  

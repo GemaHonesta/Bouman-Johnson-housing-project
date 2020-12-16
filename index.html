@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bouman-Johnson-housing-project</title>
+</head>
+
+<body>
+    <div class="container">
+    <!-- <img src="images/property.jpg"> -->
+    <!--<form action="https://pacific-refuge-73853.herokuapp.com/predict" method="POST" id="form">-->
+    <form action="#" method="POST" id="form">
+    <h1>Found Your New Property's Price</h3><br>
+        <!-- Mandatory begin-->
+        <!-- <h4>Mandatory fields</h4> -->
+        
+        <p>
+             <label for="property-type">Type of property : </label><br>
+             <select name="property-type" id="property-type">
+                <option value="APARTMENT">APARTMENT</option>
+                <option value="HOUSE">HOUSE</option>
+                <option value="OTHERS">OTHERS</option>
+            </select><br><br>
+        </p>
+        <p>
+            <label for="rooms-number">Enter Room Number:</label><br>
+            <input type="number" id="rooms-number" name="rooms-number"><br><br>
+        </p>
+        <p>
+            <label for="zip-code">Enter Zip Code:</label><br>
+            <input type="number" id="zip-code" name="zip-code" min="1000" max="9000"><br><br>
+        </p>
+        <p>
+            <label for="area">Enter The House's area (m2):</label><br>
+            <input type="number" id="area" name="area"><br><br>
+        </p>
+        <!--End of Mandatory-->
+        
+        <!-- Optional-->
+        <!-- <h4>Optional fields</h4> -->
+
+        <!--Text Strings-->
+        <!-- <p>
+            <label for="full-address">Enter your address:</label>
+            <input type="text" id="full-address" name="full-address">
+        </p> -->
+
+        <!--Dropdowns-->
+        <!-- <p><label for="building-state">Choose type of property:</label>
+            <select name="building-state" id="building-state">
+                <option value="APARTMENT">NEW</option>
+                <option value="HOUSE">GOOD</option>
+                <option value="OTHERS">TO RENOVATE</option>
+                <option value="OTHERS">JUST RENOVATED</option>
+                <option value="OTHERS">TO REBUILD</option>
+            </select>
+        </p> -->
+        
+        <!-- Numbers Integer-->
+        <!-- <p>
+            <label for="land-area">Land area[ m2 ]:</label>
+            <input type="number" id="land-area" name="land-area">
+        </p>
+        <p>
+            <label for="terrace-area">Terrace Area [ m2 ]:</label>
+            <input type="number" id="terrace-area" name="terrace-area">
+        </p>
+        <p>
+            <label for="garden-area">Garden Area [ m2 ]:</label>
+            <input type="number" id="garden-area" name="garden-area">
+        </p>
+        <p>
+            <label for="facades-number">Facades number : </label>
+            <input type="number" id="facades-number" name="facades-number">
+        </p> -->
+        <!-- Booleans-->
+        <!-- equipped kitchen  -->
+        <!-- <div id="equi_kitchen">
+            <p>Is the kitchen equipped ?</p>
+            <input type="radio" id="equi_kitchen" name="equipped-kitchen" value="true">
+            <label for="true">True</label><br>
+            <input type="radio" id="equi_kitchen" name="equipped-kitchen" value="false">
+            <label for="false">False</label><br>
+        </div> -->
+
+        <!-- swimmingpool  -->
+        <!-- <div id="swimpool">swimpool
+            <p>Is there a swimpool ?</p>
+            <input type="radio" id="swimpool" name="swimmingpool" value="true">
+            <label for="true">True</label><br>
+            <input type="radio" id="swimpool" name="swimmingpool" value="false">
+            <label for="false">False</label><br>
+        </div> -->
+
+        <!-- Furnished property  -->
+        <!-- <div id="furnised">
+            <p>Is the proprety furnished ?</p>
+            <input type="radio" id="furnised" name="furnished" value="true">
+            <label for="true">True</label><br>
+            <input type="radio" id="furnised" name="furnished" value="false">
+            <label for="false">False</label><br>
+        </div> -->
+
+        <!-- Open-fire  -->
+        <!-- <div id="openfire">
+            <p>Is there an open-fire ?</p>
+            <input type="radio" id="openfire" name="open-fire" value="true">
+            <label for="true">True</label><br>
+            <input type="radio" id="openfire" name="open-fire" value="false">
+            <label for="false">False</label><br>
+        </div> -->
+
+        <!-- equipped kitchen  -->
+        <!-- <div id="terrace">
+            <p>Is there a terrace ?</p>
+            <input type="radio" id="terrace" name="terrace" value="true">
+            <label for="true">True</label><br>
+            <input type="radio" id="terrace" name="terrace" value="false">
+            <label for="false">False</label><br>
+        </div> -->
+
+        <!-- garden  -->
+        <!-- <div id="garden">
+            <p>Is there a garden ?</p>
+            <input type="radio" id="garden" name="garden" value="true">
+            <label for="true">True</label><br>
+            <input type="radio" id="garden" name="garden" value="false">
+            <label for="false">False</label><br>
+        </div> -->
+
+<!-- Optional End-->
+        <input id="btn" type="submit" value="Predict"> 
+    </form>  
+</div>
+
+<!-- The Modal window -->
+<div id="myModal" class="my-modal">
+    <div class="my-modal-content">
+        <div class="my-modal-header d-flex p-0">
+            <h4 class="text-secondary flex-fill pt-3">Here is the price:</h4>
+            <span class="close-btn text-secondary flex-fill col-1">&times;</span>
+        </div>
+        
+        <div class="my-modal-body">
+            <p class="colorBrown" id="price">0</p>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="app.js"></script>
+</body>
+
+
+
+</html>
